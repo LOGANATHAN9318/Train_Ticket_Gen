@@ -7,9 +7,9 @@ def booking_ticket():
     to = st.text_input("To")    
     board_sta = st.text_input("Boarding Station")        
     name = st.text_input("Passenger Name")
-    btn = 
 
 
+    
 def about_app():
     pass
 
