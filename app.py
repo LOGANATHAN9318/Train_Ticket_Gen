@@ -21,12 +21,10 @@ footer:after{
 }
 </style>
 """
-try:
-    DATABASE_URL = os.environ.get('postgres://ngarykkanoateu:40011b55a3385d5201e0e7d86524e7dca045f5a874a4da0cf5f3c401710f92e8@ec2-18-214-134-226.compute-1.amazonaws.com:5432/d889lgn9dldqrf')
-    con = db.connect(DATABASE_URL)
-    cur  = con.cursor()
-except Exception as err:
-    pass
+
+DATABASE_URL = os.environ.get('postgres://ngarykkanoateu:40011b55a3385d5201e0e7d86524e7dca045f5a874a4da0cf5f3c401710f92e8@ec2-18-214-134-226.compute-1.amazonaws.com:5432/d889lgn9dldqrf')
+con = db.connect(DATABASE_URL)
+cur  = con.cursor()
 
 
 def booking_ticket():
